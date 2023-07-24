@@ -1,7 +1,10 @@
-list=[1,2,3,4,5]
-list.pop(list[0:2])
-print(list)
-
+def fib(n):
+    if n<=3:
+        f=1
+    else:
+        f=fib(n-1)+fib(n-2)
+    return f
+print(fib(5))
 
 
 

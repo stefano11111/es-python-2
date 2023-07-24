@@ -15,9 +15,15 @@
 # Hello Tristram Mcbride!
 # Hello Baldwin Preston!
 # Hello Wally Collins!
-members=[["john", "Doe"], ["Tristram", "Mcbride"],["Baldwin", "Preston"],["Wally","Collins"]]
-def saluta(x):
-    for name,surname in members:
-        print(f"Hello {name} {surname}!")
+members=["Tristram Mcbride","john Doe","Baldwin Preston","Wally Collins"]
+lista=[]
+for x in members:
+    lista.append(x.split())
 
-saluta(members)
+def saluta(name="john", surname="Doe"):
+    print(f"Hello {name} {surname}")
+    for name,surname in lista:
+        if name!="john":
+            print(f"Hello {name} {surname}")
+
+saluta()
