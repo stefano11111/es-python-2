@@ -12,7 +12,8 @@ class animal:
     def leg_count(self):
         print(f"the animal has {self.number_of_legs} legs")
     def runs(self):
-        print("Running started")
+        if self.it_runs:
+            print("Running started")
 
 cane=animal("dog",True,4)
 cane.runs()

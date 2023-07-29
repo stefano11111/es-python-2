@@ -1,10 +1,11 @@
-def fib(n):
-    if n<=3:
-        f=1
-    else:
-        f=fib(n-1)+fib(n-2)
-    return f
-print(fib(5))
+lista =  [1, 2, 3, 3, 3, 4, 4, 5, 5]
+a=0
+b=0
+for x,y in enumerate(lista):
+    if lista.count(y)>a:
+        a=lista.count(y)
+        b=x
+print(lista[b])
 
 
 

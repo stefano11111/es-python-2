@@ -19,6 +19,7 @@ members=["Tristram Mcbride","john Doe","Baldwin Preston","Wally Collins"]
 lista=[]
 for x in members:
     lista.append(x.split())
+print(lista)
 
 def saluta(name="john", surname="Doe"):
     print(f"Hello {name} {surname}")
